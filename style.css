@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    background-color: brown;
+}
+#logo{
+    width: 150px;
+    padding-right: 30px;
+}
+#icon-menu{
+    display: none;
+    width: 50px;
+}
+#nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#nav-figure{
+    display: flex;
+    align-items: center;
+
+}
+.itens-link{
+    color: black;   
+    margin-right: 60px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+}
+.icon{
+    width: 40px;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#banner img{
+    width: 100%;
+}
+#container-galery{
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    flex-direction: column;
+    padding: 100px 0;
+}
+.text{
+    color: #fff;
+    padding: 30px;
+}
+#galery-events{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    
+}
+.image-galery{
+    position: absolute;
+    top: 0;
+}
+#link-agend{
+    margin-top: 900px;
+}
+#contacts{
+    background-color: #fff;
+    padding: 100px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+#contacts > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#contacts div h1{
+}
+.img-contacts{
+    width: 100%;
+    padding: 20px;
+}
+#link-yt{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+
+#contacts div a img{
+    width: 40px;
+}
+
+@media screen and (max-width:1150px) {
+    #nav-links{
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        right: 0%;
+        background-color: #fff;
+        height: 0px;
+        overflow: hidden;
+        transition: .5s;
+        width: 100%;
+        justify-content: center;
+    }
+    #icon-menu{
+        display: block;
+    }
+    nav div{
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 30px 0px 30px ;
+    }
+    
+}
